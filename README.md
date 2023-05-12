@@ -1,4 +1,4 @@
-# Mon Portefolio - Léo Bourin
+# Mon Portefolio - Léo Bourin (Disponible en version mobile !)
 
 Lien : https://blogleob.fr/
 
