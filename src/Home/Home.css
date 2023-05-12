@@ -1,0 +1,140 @@
+/* GENERAL */
+
+h1 {
+    font-family: 'Ubuntu Mono', monospace;
+    src: local('Ubuntu Mono'), url(../fonts/UbuntuMono-Regular.ttf) format('truetype');
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Ubuntu Mono', monospace;
+    src: local('Ubuntu Mono'), url(../fonts/UbuntuMono-Regular.ttf) format('truetype');
+}
+
+/* NAV */
+
+nav {
+    background-color: #2b2b2b;
+}
+
+.nav-link {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* HOME */
+
+#home {
+    height: 700px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+}
+
+#home-mobile {
+    display: none;
+}
+
+/* REALISATION */
+
+.row {
+    padding-left: 0 !important;
+}
+
+#realisation {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#realisation .row .card {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+#realisation .row .card:hover {
+    cursor: pointer;
+}
+
+/* ABOUT */
+
+#about {
+    margin-bottom: 100px;
+}
+
+#about .col p {
+    font-size: 25px;
+}
+
+/* CONTACT */
+
+
+#contact {
+    margin-bottom: 100px;
+}
+
+.contact-card {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.contact-card h2{
+    font-size: 50px;
+}
+
+.contact-card img{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #home {
+        display: none;
+    }
+    #home-mobile {
+        display: block;
+        background-image: url(../img/background-mobile.png);
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    #realisation {
+        margin-bottom: 30px;
+    }
+    #realisation h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #realisation .row{
+        flex-direction: column;
+    }
+    #realisation .col{
+        margin-top: 20px;
+    }
+    #about {
+        margin-bottom: 30px;
+    }
+    #about h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #about img{
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    #about .row {
+        flex-direction: column;
+    }
+    #about .col p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .contact-card {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    #contact {
+        margin-bottom: 30px;
+    }
+}

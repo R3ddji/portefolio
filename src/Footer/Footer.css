@@ -1,0 +1,43 @@
+.Footer{
+    font-family: 'Ubuntu Mono', monospace;
+    src: local('Ubuntu Mono'), url(../fonts/UbuntuMono-Regular.ttf) format('truetype');
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.Footer h1 {
+    font-size: 100px;
+    margin-left: 200px;
+}
+
+li a{
+    color: white !important;
+}
+
+li a:hover{
+    color: rgb(184, 184, 184) !important;
+}
+
+.Footer li a:hover{
+    color: rgb(182, 182, 182) !important;
+}
+
+.Footer ul {
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .Footer h1 {
+        font-size: 50px; 
+        margin-left: 0;
+    }
+    .Footer .row {
+        text-align: center;
+        flex-direction: column;
+    }
+    .Footer ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
